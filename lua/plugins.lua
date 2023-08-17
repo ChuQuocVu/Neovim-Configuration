@@ -14,6 +14,7 @@ packer.startup(function(use)
       requires = { 'tjdevries/colorbuddy.nvim' }
     }
     use 'kyazdani42/nvim-web-devicons' -- File icons
+    use 'glepnir/lspsaga.nvim' -- LSP UIs
     use 'L3MON4D3/LuaSnip' -- Snippet
     use 'hoob3rt/lualine.nvim' -- Statusline
     use 'onsails/lspkind-nvim' -- vscode-like pictograms
@@ -27,4 +28,14 @@ packer.startup(function(use)
     }
     use 'windwp/nvim-autopairs'
     use 'windwp/nvim-ts-autotag'
+
+    use 'nvim-lua/plenary.nvim' -- Common utilities
+    use 'nvim-telescope/telescope.nvim'
+    use 'nvim-telescope/telescope-file-browser.nvim'
+
+    use 'akinsho/nvim-bufferline.lua'
+    use 'norcalli/nvim-colorizer.lua'
+
+    use 'lewis6991/gitsigns.nvim'
+    use 'dinhhuy258/git.nvim' -- For git blame & browser
 end)
